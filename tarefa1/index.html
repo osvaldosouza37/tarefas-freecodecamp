@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="UTF-8">
+	</head>
+	<body>
+		<main>
+			<form>
+				<h1>Ficha do personagem</h1>
+				<img src="https://pm1.narvii.com/6321/7c580efe3bf0cfd8c785fcfbe64cb8ecbf443bdd_00.jpg" alt="imagem do jogador">
+				<br/><br/>
+				<label for="nome"> Nome
+					<input type="text" id="nome" placeholder="Nome do héroi">
+				</label>
+				<br/><br/>
+				<label for="jogador"> Jogador
+					<input type="text" placeholder="Nome do jogador">
+				</label>
+				<br/><br/>
+				Raça: 
+				<label for="humano"> 
+					<input type="radio" id="humano" name="raca" value="humano" checked>
+					Humano
+				</label>
+				<label for="elfo">
+					<input type="radio" id="elfo" name="raca" value="elfo">
+					Elfo
+				</label>
+				<label for="anao">
+					<input type="radio" id="anao" name="raca" value="anao">
+					Anão
+				</label>
+				<label for="halfling">
+					<input type="radio" id="halfling" name="raca" value="halfling">
+					Halfling
+				</label>
+				<br/><br/>
+				<label> Classe
+					<select>
+						<option selected disabled> Escolha uma classe </option>
+						<option> Guerreiro </option>
+						<option> Mago </option>
+						<option> Clerigo </option>
+						<option> Ladino </option>
+					</select>
+				</label>
+				<br/><br/>
+				<button type="submit">Enviar</button>
+			</form>
+		</main>
+	</body>
+</html>

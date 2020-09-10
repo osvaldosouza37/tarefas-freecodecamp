@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title></title>
+		<meta charset="UTF-8">
+		<style>
+			#profile-picture{
+				display:block;
+				width:12em;
+				border-radius:50%;
+				margin-left:auto;
+				margin-right:auto;
+				margin-bottom:-20px;
+			}
+			.painel{
+				width:15em;
+				margin-top:10px;
+				margin-bottom:15px;
+				padding:5px;
+				background-color:#550055;
+			}
+			.row-color{
+				padding:3px;
+				border-radius:5px;
+				background-color:#990055;
+				color:white;
+			}
+			input[type='text']{
+				width:100%;
+				padding:12px 20px;
+				margin:8px 0;
+				box-sizing:border-box;
+			}
+			input[type='radio']{
+				margin-left:-40px;
+			}
+			ul{
+				list-style:none;
+			}
+			button{
+				border:none;
+				border-radius:5px;
+				margin:0px;
+				margin-top:5px;
+				width:100%;
+				color:white;
+				background-color:#00aaaa;
+			}
+		</style>
+	</head>
+	<body>
+		<main>
+			<form>
+				<h1>Ficha do personagem</h1>
+				<div class="painel">
+					<img src="https://pm1.narvii.com/6321/7c580efe3bf0cfd8c785fcfbe64cb8ecbf443bdd_00.jpg" id="profile-picture"alt="imagem do jogador">
+					<div class="row-color">
+						<div>
+							<label for="nome"> Nome
+							<input type="text" id="nome" placeholder="Nome do héroi">
+							</label>
+						</div>
+						<div>
+							<label for="jogador"> Jogador
+							<input type="text" placeholder="Nome do jogador">
+							</label>
+						</div>
+						<div>
+							Raça:
+							<ul>
+								<li>
+									<label for="humano"> 
+										<input type="radio" id="humano" name="raca" value="humano" checked>
+										Humano
+									</label>
+								</li>
+								<li>
+									<label for="elfo">
+										<input type="radio" id="elfo" name="raca" value="elfo">
+										Elfo
+									</label>
+								</li>
+								<li>
+									<label for="anao">
+										<input type="radio" id="anao" name="raca" value="anao">
+										Anão
+									</label>
+								</li>
+								<li>
+									<label for="halfling">
+										<input type="radio" id="halfling" name="raca" value="halfling">
+										Halfling
+									</label>
+								</li>
+							</ul>			
+						<label> Classe
+						</div>
+						<div>
+						<select>
+							<option selected disabled> Escolha uma classe </option>
+							<option> Guerreiro </option>
+							<option> Mago </option>
+							<option> Clerigo </option>
+							<option> Ladino </option>
+						</select>
+						</label>
+						</div>
+							<button type="submit">Enviar</button>
+						</div>
+				</div>
+			</form>
+		</main>
+	</body>
+</html>
